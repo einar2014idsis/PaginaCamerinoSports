@@ -1,0 +1,555 @@
+/* ESTO ES EL TIPO DE FUENTE DEL PROYECTO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ESTO ASE QUITA LA LINEA DE BAJA DE LOS ENLACES Y MAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ESTO SERVIRA PARA CAMBIAR LAS LETRAS SEGUN NUESTRA FUENTE*/
+body {
+    /* LA PRIMERA LINEA ES PARA CAMBIAR DE COLOR LA PANTALLA PRINCIPAL y color de la boddy -----------*/
+    background-color: #080808;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*LO QEU HACE ES EVITAR PARA SALIR DEL CONTENDOR O DEPANTALLA*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* LO QUE HACE ES LA UBICACION DE LAS FLECHAS DE LAS IMAGENES */
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+/* LO QUE HACE ES MODIFICAR EL COLOR DE LAS FLECHiTAS DE LAS IMAGENES*/
+.swiper-button-next{
+    color: #DB241B;
+}
+.swiper-button-prev{
+    color: #DB241B;
+}
+
+
+/* */
+
+.swiper-pagination-bullet{
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #DB241B;
+
+}
+
+/* PARA ARRGLAR EL LOGO DE MENU*/
+
+.menu{
+    /*LA PRIMERA LINEA ES PARA CAMBIAR EL COLOR DEL HEADER DEL MENU............................................................................*/
+    background-color: #ceb6b6;
+    padding: 10px 0;
+    position:absolute ;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    z-index: 1000;
+}
+
+.nabvar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+ 
+.logo-1{
+    width: 0;
+}
+/* PARA CAMBIAR DE TAMAÑO EL LOGO PRINCIPAL*/
+.logo-2{
+    width: 150px;  
+}  
+
+/* PARA QUE LOS LOGOS SE PONGAN EN LINEA*/
+.socials{
+    display: flex;
+
+}
+
+/* ESTO NOS SERVIRA PARA AGREGAR UN CONTORNO A LAS LOGOS DE REDES SOCIALES*/
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #DB241B;
+    border-radius: 50%;
+    
+}
+
+/* ESTO NOS SERVIRA PARA  QUE CUADNO PASEMOS LE MOUSE SE PONGA DE COLOR OJO O EL DESEADO*/
+
+.social:hover{
+    background-color: #DB241B;
+}
+
+/* ESTO NOS SERVIRA PARA  CENTRAR LOS LOGOS DENTRO DEL CIRCULO*/
+.social img{
+    margin: 8px 0 0 10px;
+}
+/*NO ESTA FUNCIONANDO*/
+/* ESTO NOS SERVIRA PARA QUE EL LOGO DE MENU VAYA ALA ISQUIERDA*/
+.menu .nabvar ul li {
+    position: relative;
+    float: left;
+}
+/* ESTO SIRBE PARA PARA FORMAR BIEN EL PANEL*/
+.menu .nabvar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #D3D2D2;
+    display: block;
+}
+
+.menu.nabvar ul li{
+    color: #DB241B;
+
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+/*modificamos el slider*/
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+.slider-txt h1{
+    font-size: 70px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.slider-txt p {
+    font-size: 18px;
+    color: #A7A7A7;
+}
+
+.botones{
+    margin-top: 50px;
+
+}
+/*PARA LOS BOTONES DE COMPPRAR*/
+.btn-1{
+    display: iniline-block;
+    padding: 15px 35px;
+    border:  2px solid #DB241B;
+    color: #FFFFFF;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+
+}
+.btn-1:hover{
+    border: 2px solid #DB241B ;
+    background-color: #DB241B;
+}
+
+/*PARA LA IMAGEN*/
+.slider-img{
+    width: 50%;
+
+}
+.slider-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+/*AHORA TRABAJAREMOS EN LOS TABS*/
+.products{
+    /*PARA CAMBIAR DE COLOR DE LOS PRODUCTOS................................................................................................*/
+    background-color: #322323;
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+
+}
+
+.tabs label{
+    width: 15%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #A7A7A7;
+    font-weight: 700;
+    /*PARA EL TAMAÑO DE LA LETRA*/
+    font-size: 20px ;
+    text-transform: uppercase ;
+    transition: background ease 0.2s;
+
+}
+.tabs .tab{
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top:  25px;
+
+}
+.tabs input[type="radio"]{
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label{
+    border-bottom:  2px solid #DB241B;
+    color: #FFFFFF;
+}
+/*PARA TODA LA VARIEDAD*/
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block ;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 0 10px;
+}
+.product-img{
+    width: 50%;
+    text-align: left;
+}
+.produt-img h4{
+    display: inline-block;
+    padding: 5px 7px;
+    line-height: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #555555;
+    margin-bottom: 50px;
+
+}
+.product-img img{
+    width: 150px;
+    height: 120px;
+    
+ }
+ .product-txt{
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+ }
+ .product-tx h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+ }
+ .product-txt p {
+    color: #A7A7A7;
+    font-size: 16px;
+    margin-bottom: 15px;
+ }
+ .product-txt span{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 800;
+
+ }
+ .info{
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+ }
+ .info-img{
+    width: 50%;
+
+ }
+ .info-img img{
+    width: 500px;
+    height: 250px;
+ }
+ .info-txt{
+    width: 50%;
+
+ }
+ .info-txt h2{
+    font-size: 75px;
+    color:#FFFFFF ;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+ }
+ .info-txt p{
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 50px;
+ }
+ /*PAR A EL BOTON 2*/
+ .btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #DB241B;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+ }
+ .btn-2:hover{
+    background-color:#555555;
+
+ }
+
+ .horario{
+    padding: 100px 0px;
+    /*ESTE CAMBIA EL COLOR DE LA BARRA HORARIO   ...............................................................................*/
+    background-color:#322323;
+ ;
+
+ }
+ .horario-info h2 {
+    font-size: 75px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+ }
+ .horario-txt {
+    display: flex;
+    justify-content: space-between;
+
+ }
+ 
+
+ .txt{
+    color: #FFFFFF;
+ }
+ .txt h4 {
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 30px;
+ }
+ .txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+ }
+/*PARA CAMBIAR DE COLOR EL MAPA PERO EL MIO ESTA FACHERO*/
+ /*.mapa{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+ }*/
+ .footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .links h4 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+ }
+.links ul li a {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .menu-2{
+        display: none;
+    }
+    .logo-1{
+        width: 100px;
+    }
+    .logo-2{
+
+        width: 0;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .nabvar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+    .menu .nabvar ul li {
+        width: 100%;
+
+    }
+    #menu:checked ~ .nabvar {
+        display: initial;
+    }
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+    .slider{
+        flex-direction: column;
+    }
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .slider-txt h1 {
+        font-size: 50px;
+
+    }
+    .slider-txt p{
+        font-size: 16px;
+
+    }
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+
+    }
+    .slider-img{
+        width: 100%;
+        text-align: center;
+    }
+    .slider-img img{
+        margin-right: 0px;
+        width: 300px;
+    }
+  /*ESTO PARA QUE SE SENTRE MAS BONITO DE ACA ASIA ARIBA*/
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets, .swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -7px;
+
+  }
+  .tabs{
+    padding: 50px 30px;
+
+  }
+  .tabs label{
+    width: 33%;
+  }
+  .info{
+    padding: 30px;
+    flex-direction: column;
+  }
+  .info-img{
+    width: 100%;
+    text-align: center;
+  }
+  .info-img img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 25px ;
+  }
+  .info-txt{
+    width: 100%;
+    text-align: center;
+
+  }
+  .info-txt h2{
+    font-size: 50px;
+
+  }
+  .info-txt p{
+    font-size: 16px
+  }
+  .btn-1{
+    font-size: 16pz;
+  }
+  .horario{
+    padding: 30px;
+    text-align: center;
+  }
+  .horario-info h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .horario-txt{
+    flex-direction: column;
+  }
+  .socials{
+    justify-content: center;
+  }
+  .social img{
+    margin: 8px 0 0 0;
+  }
+
+  .footer{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .links h4{
+    margin: 25px 0px 10px 0px;
+  }
+
+
+}

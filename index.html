@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="menu container">
+            <img class="logo-1" src="imagenes/Logocamerino.png" alt=""> <!--AQUI SE DEBE PONER EL LOGO-->
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="nabvar">
+                <div class="menu-1">
+                    <u1>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Productos</a></li>
+
+                    </u1>
+                </div>
+
+                <img class="logo-2" src="imagenes/Logocamerino.png" alt="">
+
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+      <!--logos de las redes sociales-->
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s3.svg" alt="">
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <!--DE AQUI ARRIBA ES EL MENU-->
+
+        <!--AQUI COMENZQAOS CON LA SEGUNDA PARTE DEL HEADER-->
+
+
+        <div class="header-content container">
+
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>ULTRA 5 MATCH</h1>
+                                <p>
+                                    Ligereza y velocidad en cada jugada. Las Puma Ultra 5 Match están diseñadas para
+                                    jugadores rápidos que buscan explosividad y control. Con su exterior de material
+                                    sintético ligero y suela optimizada para tracción, ofrecen un excelente rendimiento
+                                    en partidos intensos. ¡Ideales para destacar en la cancha!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-img">
+                                <img src="imagenes/AG-unisex.avif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--AQUI SE COPIO 1 VECES Y SOLO SE MODIFICARIA EL TEXTO Y LAS IMAGENES-->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>GOLETTO</h1>
+                                <p>
+                                    Clásico, cómodo y confiable. Las Adidas Goletto son ideales para jugadores que
+                                    buscan un buen rendimiento a un precio accesible. Con su diseño resistente, suela
+                                    con excelente tracción y ajuste cómodo, estas botas son perfectas para fútbol en
+                                    césped natural o sintético. ¡Listas para jugar!
+
+
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="bt-1">Comprar</a>
+                                    <a href="#" class="bt-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/S2goletocamerino.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--AQUI SE COPIO 2 VECES Y SOLO SE MODIFICARIA EL TEXTO Y LAS IMAGENES-->
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>ADIDAS F50</h1>
+                                <p>
+                                    ¡Velocidad y estilo en cada paso! Las Adidas F50 están diseñadas para jugadores que
+                                    buscan ligereza, tracción y máximo rendimiento en la cancha. Con su diseño
+                                    aerodinámico y materiales de alta calidad, estas zapatillas ofrecen una combinación
+                                    perfecta de control y velocidad. ¡Listas para llevar tu juego al siguiente nivel!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="bt-1">Comprar</a>
+                                    <a href="#" class="bt-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/S1f50camerinoSinfondo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--BOTONES-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+    </header>
+    <!--TODO EL HEADER HACE REFERENCIA AL MENU-->
+
+    <main class="products">
+        <div class="tabs container">
+
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">CESPED</label> <!--//para mostrar la imagen de prueba-->
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+
+                    <div class="swiper-wrapper">
+
+                        <!--para el producto 1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4> <!--esto es para el nombre  o titulo de la imagen-->
+                                    <img src="imagenes/CESPED1.avif" alt=""> <!--//para cambiar la imagen adecuada-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">S/580.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--//para el producto2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/CESPED2.avif" alt="">
+                                    <!--//para cambiar la imagen adecuada por ejemplo aqui era la imagen de food2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--para el producto 3 y vamos agregando de acuerdo a nuestros productos-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/CESPED3.webp" alt="">
+                                    <!--//para cambiar la imagen adecuada de acuerdo a los que tenemos por ejemplo ahi era fgood 2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--aqui ponemos por si quermos meter mas productos los que sean necesarios-->
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!--pegamos para la siguiente parte por que se repite PARA EL TAB 2-->
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">RUNING</label> <!--//para mostrar la imagen de prueba-->
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+
+                    <div class="swiper-wrapper">
+
+                        <!--para el producto 1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--esto es para el nombre  o titulo de la imagen-->
+                                    <img src="imagenes/RUNIG1.jpg" alt=""> <!--//para cambiar la imagen adecuada-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--//para el producto2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/RUNIG3.jpg" alt="">
+                                    <!--//para cambiar la imagen adecuada por ejemplo aqui era la imagen de food2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--para el producto 3 y vamos agregando de acuerdo a nuestros productos-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>huevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/RUNIG3.jpg" alt="">
+                                    <!--//para cambiar la imagen adecuada de acuerdo a los que tenemos por ejemplo ahi era fgood 2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--aqui ponemos por si quermos meter mas productos los que sean necesarios-->
+                    </div>
+
+                    <div class="swiper.swiper-button-next"></div>
+                    <div class="swiper.swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!--pegamos para la siguiente parte por que se repite PARA EL TAB 3-->
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Variedad</label> <!--//para mostrar la imagen de prueba-->
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+
+                    <div class="swiper-wrapper">
+
+                        <!--para el producto 1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--esto es para el nombre  o titulo de la imagen-->
+                                    <img src="imagenes/camerino.png" alt=""> <!--//para cambiar la imagen adecuada-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--//para el producto2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/camerino.png" alt="">
+                                    <!--//para cambiar la imagen adecuada por ejemplo aqui era la imagen de food2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--para el producto 3 y vamos agregando de acuerdo a nuestros productos-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>huevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/camerino.png" alt="">
+                                    <!--//para cambiar la imagen adecuada de acuerdo a los que tenemos por ejemplo ahi era fgood 2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>calidad premiun</p>
+                                    <span class="price">$80.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--aqui ponemos por si quermos meter mas productos los que sean necesarios-->
+                    </div>
+
+                    <div class="swiper.swiper-button-next"></div>
+                    <div class="swiper.swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!--PRUEBA PARA OTRO CAMPO-->
+             <input type="radio" name="tabs" id="tab4" checked="checked" class="tabInput" value="4">
+            <label for="tab4">POLOS</label> <!--//para mostrar la imagen de prueba-->
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+
+                    <div class="swiper-wrapper">
+
+                        <!--para el producto 1-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--esto es para el nombre  o titulo de la imagen-->
+                                    <img src="imagenes/POLO1.png" alt=""> <!--//para cambiar la imagen adecuada-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>ORIGINAL</p>
+                                    <span class="price">S/380.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--//para el producto2-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/POLO2.png" alt="">
+                                    <!--//para cambiar la imagen adecuada por ejemplo aqui era la imagen de food2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <p>ORIGINAL</p>
+                                    <span class="price">S/280.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--para el producto 3 y vamos agregando de acuerdo a nuestros productos-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>nuevo</h4> <!--aqui cambian el nombre del producto segun la imagen-->
+                                    <img src="imagenes/POLO3.png" alt="">
+                                    <!--//para cambiar la imagen adecuada de acuerdo a los que tenemos por ejemplo ahi era fgood 2-->
+
+                                </div>
+                                <div class="product-txt">
+                                    <h4>producto</h4>
+                                    <p>ORIGINAL</p>
+                                    <span class="price">S/250.00</span> <!--//esta en ingles paRA CAMBIAR-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--aqui ponemos por si quermos meter mas productos los que sean necesarios-->
+                    </div>
+
+                    <div class="swiper.swiper-button-next"></div>
+                    <div class="swiper.swiper-button-prev"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!--abrimos una nueva seccion-->
+
+    <section class="info container">
+        <div class="info-img">
+            <img src="imagenes/nose.jpg" alt="">
+            <!--AQUI EN EL EJEMPLO PONE LA IMAGEN DE INFO PNJ Y NO SE QUE ERRA-->
+            <!--aqui cambiamos por la imagen info pnj que no se que es o donde va -->
+        </div>
+
+        <div class="info-txt">
+            <h2>informacion</h2>
+            <p>
+                no me inspire y ya tengo sueñoooo pipip
+            </p>
+            <a href="#" class="btn-2">mas informacion</a>
+        </div>
+
+    </section>
+
+    <!--creamos la otra seccion para los horaris-->
+    <section class="horario">
+        <div class="horario-info container">
+
+            <!--copiamos lo mismo para la ubicacion-->
+
+            <h2>Horario</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Dirección</h4>
+                    <p>
+                        
+                        Prolg. Ayacucho D3 lote<!--PARA LA DIRECION AMOSBOS-->
+                    </p>
+                    <p>
+                        Urb. Santa Mercedes
+                    </p>
+                    <p>
+                        a una cuadra C.C Real Plaza
+                    </p>
+                    <p>
+                        cajamarca
+                    </p>
+                </div>
+                <!--copiamos lo mismo para el horario-->
+
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>
+                        lunes a viernes de 7am - 9 pm
+
+                    </p>
+                    <p>
+                        sabado a domingo de 7am - 12 pm
+                    </p>
+                </div>
+
+                <!--copiamos otra vez pero esta vez para contacto cmo telefono-->
+                <div class="txt">
+                    <h4>Telefono</h4>
+                    <p>
+                        933 825 685
+                    </p>
+                    <p>
+                        986 044 015
+                    </p>
+                    <p>
+                        telefono fijo por confirmar XDE XDE
+                    </p>
+                </div>
+
+                <!--copiamos otra vez pero esta vez para redes sociales-->
+                <div class="txt">
+                    <h4>Redes Sociales</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s1.svg" alt="">
+                                
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CREAMOS UNA NUEVA SECCION PARA EL MAPA-->
+    <section>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.8893527745028!2d-78.50630723976005!3d-7.152149381286828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25b05c7c414cd%3A0x6da1ab614c1dec85!2sCAMERINO%20SPORTS%20E.I.R.L!5e1!3m2!1ses-419!2spe!4v1747543875268!5m2!1ses-419!2spe"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--CREANOS LA SECCION PARA EL FOTER QUE TAMBIEN PODEMOS CAMBIAR O ACTUALIZAR EL LOGO-->
+    <footer class="footer container">
+        <img class="logo-2" src="imagenes/Logocamerino.png" alt="">
+        <div class="links">
+            <h4>FALTA 1</h4>
+            <ul>
+                <li><a href="#">PIENSA 1</a></li> <!--esto sirve para poner los link segun a lo que necesitemos-->
+                <li><a href="#">PIENMSA 2</a></li>
+                <li><a href="#">PIENSA 3</a></li>
+                <li><a href="#">PIENSA 4</a></li>
+            </ul>
+
+        </div>
+        <!--copiamos 1 vez-->
+        <div class="links">
+            <h4>FALTA X2</h4>
+            <ul>
+                <li><a href="#">falta</a></li> <!--esto sirve para poner los link segun a lo que necesitemos-->
+                <li><a href="#">falta</a></li>
+                <li><a href="#">falta</a></li>
+                <li><a href="#">falta</a></li>
+            </ul>
+
+        </div>
+        <!--copiamos otra vez-->
+        <div class="links">
+            <h4>FALTA X3</h4>
+            <ul>
+                <li><a href="#">FALTA TAMBIEN</a></li> <!--esto sirve para poner los link segun a lo que necesitemos-->
+                <li><a href="#">FALTA TAMBIEN</a></li>
+                <li><a href="#">FALTA TAMBIEN</a></li>
+                <li><a href="#">FALTA TANBIEN</a></li>
+            </ul>
+
+        </div>
+        <!--copiamos una tercera vez -->
+        <div class="links">
+            <h4>FALTA X4</h4>
+            <ul>
+                <li><a href="#">Y ESTO TAMBIERN</a></li> <!--esto sirve para poner los link segun a lo que necesitemos-->
+                <li><a href="#">Y ESTO TAMBIEN</a></li>
+                <li><a href="#">Y ESTO TAMBIEN</a></li>
+                <li><a href="#">Y ESTO TAMBIERN</a></li>
+            </ul>
+
+        </div>
+        <!--copiamos una ultima vez por que es para la redes sociales-->
+        <div class="links">
+            <h4>REDES SOCIALES</h4>
+            <div class="socials">
+                <a href="https://www.facebook.com/CamerinoSports/"target="_blank">
+                    <div class="social">
+                        <img src="imagenes/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#"> <!--ponemos el link de redes-->
+                    <div class="social">
+                        <img src="imagenes/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/camerino_sports_oficial/"><!--ponemos el link de redes-->
+                    <div class="social">
+                        <img src="imagenes/s3.svg" alt="">
+                    </div>
+                </a>
+                <!--PARA UNA CUARTA RED SOCIAL-->
+                <a href="#"><!--ponemos el link de redes-->
+                    <div class="social">
+                        <img src="colocamos la imagen" alt="">
+                    </div>
+                </a>
+                
+                
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
